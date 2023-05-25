@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Clientes</title>
+    <meta name ="keywords" content="veterinaria, mascotiando sas, registro, clientes, acceso">
+    <meta name ="description" content="Registrate aqui para tener acceso a todos nuestros servicios de manera prioritaria">
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="registro_clientes.css">
+</head>
+<body>
+    <head>
+        <header>
+              <div class="busqueda">
+                <input type="search" placeholder="Busqueda" autocomplete="off">
+                <button><img class="lupa" src="Imagenes/lupa.png" width="20px"></button>
+              </div>
+                <img class="logo" src="imagenes/icono.png">
+                    <h1>Mascotiando SAS</h1>
+        </header>
+        <br><br><br><br><br>
+        <main>
+            <h2>Registro Clientes</h2>
+            <form class="formulario">
+                <label for="name">Nombre</label>
+                <input class="form" type="text" id="name" autocomplete="off" required>
+                <label for="lastName">Apellido</label>
+                <input class="form" type="text" id="lastName" autocomplete="off" required>
+                <label for="cedula">Cedula</label>
+                <input class="form" type="number" id="cedula" autocomplete="off" required>
+                &nbsp;
+                <select id="tipoMascota" required>
+                    <option>Seleccione el tipo de mascota</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
+                </select>
+                <label for="password">Contraseña</label>
+                <input class="form" type="password" id="password" required>
+                &nbsp;
+                <input class="form" type="checkbox" id="checkbox" required>
+                <label for="checkbox">Acepto los terminos y condiciones</label>
+                <br><br>
+                <button class="cuenta">Crear Cuenta</button>
+
+            </form>
+        </main>
+    </head>
+    <script src="alertas.js"></script>
+</body>
+</html>
